@@ -1,3 +1,4 @@
 FROM docker:stable-git
-RUN apk add --no-cache py-pip bash jq the_silver_searcher
+RUN apk add --no-cache py-pip bash jq the_silver_searcher nodejs
 RUN pip install awscli
+RUN npm install -g wait-on
